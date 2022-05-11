@@ -42,6 +42,8 @@
             this.btnZapisz = new System.Windows.Forms.Button();
             this.btnUsun = new System.Windows.Forms.Button();
             this.dtpDataUrodzenia = new P05AplikacjaZawodnicy.DateTimePickerNullable();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cbTrener = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // txtImie
@@ -135,7 +137,7 @@
             // 
             // btnZapisz
             // 
-            this.btnZapisz.Location = new System.Drawing.Point(112, 256);
+            this.btnZapisz.Location = new System.Drawing.Point(112, 305);
             this.btnZapisz.Name = "btnZapisz";
             this.btnZapisz.Size = new System.Drawing.Size(75, 23);
             this.btnZapisz.TabIndex = 14;
@@ -145,7 +147,7 @@
             // 
             // btnUsun
             // 
-            this.btnUsun.Location = new System.Drawing.Point(12, 256);
+            this.btnUsun.Location = new System.Drawing.Point(12, 305);
             this.btnUsun.Name = "btnUsun";
             this.btnUsun.Size = new System.Drawing.Size(75, 23);
             this.btnUsun.TabIndex = 15;
@@ -162,11 +164,30 @@
             this.dtpDataUrodzenia.TabIndex = 16;
             this.dtpDataUrodzenia.Value = null;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(13, 253);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(38, 13);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Trener";
+            // 
+            // cbTrener
+            // 
+            this.cbTrener.FormattingEnabled = true;
+            this.cbTrener.Location = new System.Drawing.Point(13, 270);
+            this.cbTrener.Name = "cbTrener";
+            this.cbTrener.Size = new System.Drawing.Size(174, 21);
+            this.cbTrener.TabIndex = 18;
+            // 
             // FrmSzczegoly
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(206, 292);
+            this.ClientSize = new System.Drawing.Size(206, 340);
+            this.Controls.Add(this.cbTrener);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.dtpDataUrodzenia);
             this.Controls.Add(this.btnUsun);
             this.Controls.Add(this.btnZapisz);
@@ -204,5 +225,7 @@
         private System.Windows.Forms.Button btnZapisz;
         private System.Windows.Forms.Button btnUsun;
         private DateTimePickerNullable dtpDataUrodzenia;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cbTrener;
     }
 }

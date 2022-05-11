@@ -16,7 +16,8 @@ namespace P05AplikacjaZawodnicy
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmLogowanie());
+            //Application.Run(new FrmLogowanie());
+            Application.Run(new FrmStartowy(new Core.Domains.Uzytkownik() {  Id=0}));
         }
     }
 }

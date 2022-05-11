@@ -44,6 +44,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cbSortowanie = new System.Windows.Forms.ComboBox();
             this.wbRaport = new System.Windows.Forms.WebBrowser();
+            this.btnTrenerzy = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lvDane
@@ -195,11 +196,21 @@
             this.wbRaport.Size = new System.Drawing.Size(321, 288);
             this.wbRaport.TabIndex = 20;
             // 
+            // btnTrenerzy
+            // 
+            this.btnTrenerzy.Location = new System.Drawing.Point(365, 43);
+            this.btnTrenerzy.Name = "btnTrenerzy";
+            this.btnTrenerzy.Size = new System.Drawing.Size(75, 23);
+            this.btnTrenerzy.TabIndex = 21;
+            this.btnTrenerzy.Text = "Trenerzy";
+            this.btnTrenerzy.UseVisualStyleBackColor = true;
+            // 
             // FrmStartowy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(698, 398);
+            this.ClientSize = new System.Drawing.Size(698, 400);
+            this.Controls.Add(this.btnTrenerzy);
             this.Controls.Add(this.wbRaport);
             this.Controls.Add(this.cbSortowanie);
             this.Controls.Add(this.label4);
@@ -241,6 +252,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cbSortowanie;
         private System.Windows.Forms.WebBrowser wbRaport;
+        private System.Windows.Forms.Button btnTrenerzy;
     }
 }
 
