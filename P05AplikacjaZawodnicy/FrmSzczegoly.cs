@@ -82,7 +82,7 @@ namespace P05AplikacjaZawodnicy
                 zr.EdytujZawodnika(zawodnik, zalogowany);
             else
                 throw new Exception("Nieznany tryb");
-          
+           
             this.Close();
             fs.Odswiez();
         }
