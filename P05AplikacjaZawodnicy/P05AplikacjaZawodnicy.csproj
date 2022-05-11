@@ -103,6 +103,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="flagi\Flag_of_Austria.png" />
+    <Content Include="flagi\ger.jpg" />
+    <Content Include="flagi\pol.jpg" />
+    <Content Include="flagi\usa.jpg" />
     <Content Include="historia.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
