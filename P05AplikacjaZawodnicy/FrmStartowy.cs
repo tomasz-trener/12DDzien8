@@ -60,7 +60,7 @@ namespace P05AplikacjaZawodnicy
             // var napisy = Directory.GetFiles("flagi", "pol.*").First();
 
             //foreach (var k   in zr.PodajKraje())
-            //    if(File.Exists($@"flagi\{k.ToLower()}.jpg"))
+            //    if(File.Exists($@"flagi\{k.ToLower()}.jpg")) 
             //        listaObrazow.Images.Add(k.ToLower(), Image.FromFile($@"flagi\{k.ToLower()}.jpg"));
 
             foreach (var k in zr.PodajKraje())
