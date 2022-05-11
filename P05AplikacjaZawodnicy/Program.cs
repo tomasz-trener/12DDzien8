@@ -16,7 +16,7 @@ namespace P05AplikacjaZawodnicy
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmStartowy());
+            Application.Run(new FrmLogowanie());
         }
     }
 }

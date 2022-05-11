@@ -16,8 +16,12 @@ namespace P05AplikacjaZawodnicy
 {
     public partial class FrmStartowy : Form
     {
-        public FrmStartowy()
+        // FrmLogowanie frmLogowanie;
+        Uzytkownik zalogowany;
+        public FrmStartowy(Uzytkownik zalogowany)
         {
+            this.zalogowany = zalogowany;
+            //this.frmLogowanie = frmLogowanie;
             InitializeComponent();
 
             ZawodnicyRepository zr = new ZawodnicyRepository();
@@ -37,6 +41,7 @@ namespace P05AplikacjaZawodnicy
             cbSortowanie.DataSource = kolumny;
             cbSortowanie.DisplayMember = "NazwaWidoczna";
 
+         
         }
 
         public void Odswiez()
@@ -85,6 +90,7 @@ namespace P05AplikacjaZawodnicy
 
         private void btnWczytaj_Click(object sender, EventArgs e)
         {
+            //frmLogowanie.Close();
             Odswiez();
             btnNowy.Enabled = true;
             btnSzczegoly.Enabled = true;
@@ -99,13 +105,13 @@ namespace P05AplikacjaZawodnicy
         {
             Zawodnik zaznaczony = (Zawodnik)lvDane.SelectedItems[0].Tag;
 
-            FrmSzczegoly fs = new FrmSzczegoly(this, zaznaczony);
+            FrmSzczegoly fs = new FrmSzczegoly(this, zaznaczony, zalogowany);
             fs.Show();
         }
 
         private void btnNowy_Click(object sender, EventArgs e)
         {
-            FrmSzczegoly fs = new FrmSzczegoly(this);
+            FrmSzczegoly fs = new FrmSzczegoly(this, zalogowany);
             fs.Show();
         }
 
@@ -113,7 +119,7 @@ namespace P05AplikacjaZawodnicy
         {
             Zawodnik zaznaczony = (Zawodnik)lvDane.SelectedItems[0].Tag;
 
-            FrmSzczegoly fs = new FrmSzczegoly(this, zaznaczony);
+            FrmSzczegoly fs = new FrmSzczegoly(this, zaznaczony,zalogowany);
             fs.Show();
         }
 

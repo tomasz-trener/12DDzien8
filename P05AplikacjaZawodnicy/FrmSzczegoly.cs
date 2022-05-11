@@ -23,15 +23,17 @@ namespace P05AplikacjaZawodnicy
         Zawodnik zawodnik;
         FrmStartowy fs;
         TrybOkienka trybOkienka;
+        Uzytkownik zalogowany;
 
-        public FrmSzczegoly(FrmStartowy fs)
+        public FrmSzczegoly(FrmStartowy fs, Uzytkownik zalogowany)
         {
+            this.zalogowany = zalogowany;
             InitializeComponent();
             this.fs = fs;
             trybOkienka = TrybOkienka.Nowy;
         }
 
-        public FrmSzczegoly(FrmStartowy fs, Zawodnik zawodnik) : this(fs)
+        public FrmSzczegoly(FrmStartowy fs, Zawodnik zawodnik, Uzytkownik zalogowany) : this(fs, zalogowany)
         {
             //this.fs = fs;
             this.zawodnik = zawodnik;
@@ -75,9 +77,9 @@ namespace P05AplikacjaZawodnicy
             ZawodnicyRepository zr = new ZawodnicyRepository();
 
             if (trybOkienka == TrybOkienka.Nowy)
-                zr.DodajZawodnika(zawodnik);
+                zr.DodajZawodnika(zawodnik,zalogowany);
             else if (trybOkienka == TrybOkienka.Edycja)
-                zr.EdytujZawodnika(zawodnik);
+                zr.EdytujZawodnika(zawodnik, zalogowany);
             else
                 throw new Exception("Nieznany tryb");
           
@@ -90,7 +92,7 @@ namespace P05AplikacjaZawodnicy
             if(trybOkienka== TrybOkienka.Edycja)
             {
                 ZawodnicyRepository zr = new ZawodnicyRepository();
-                zr.UsunZawodnika(zawodnik);
+                zr.UsunZawodnika(zawodnik, zalogowany);
                 this.Close();
                 fs.Odswiez();
             }
