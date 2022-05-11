@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02ZadanieDziedziczenie", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03AplikacjaOkienkowa", "P03AplikacjaOkienkowa\P03AplikacjaOkienkowa.csproj", "{A8FB154B-F8CD-489F-AC0F-35D28579D4D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04WstepORM", "P04WstepORM\P04WstepORM.csproj", "{868DC8C9-7F06-4EA1-BC2D-5453CB687048}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05AplikacjaZawodnicy", "P05AplikacjaZawodnicy\P05AplikacjaZawodnicy.csproj", "{0A5E5767-72AF-4BD8-B6CE-54CB04576020}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{A8FB154B-F8CD-489F-AC0F-35D28579D4D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8FB154B-F8CD-489F-AC0F-35D28579D4D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8FB154B-F8CD-489F-AC0F-35D28579D4D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{868DC8C9-7F06-4EA1-BC2D-5453CB687048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{868DC8C9-7F06-4EA1-BC2D-5453CB687048}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{868DC8C9-7F06-4EA1-BC2D-5453CB687048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{868DC8C9-7F06-4EA1-BC2D-5453CB687048}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A5E5767-72AF-4BD8-B6CE-54CB04576020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A5E5767-72AF-4BD8-B6CE-54CB04576020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A5E5767-72AF-4BD8-B6CE-54CB04576020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A5E5767-72AF-4BD8-B6CE-54CB04576020}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
